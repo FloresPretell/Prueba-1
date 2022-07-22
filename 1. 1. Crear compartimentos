@@ -1,0 +1,43 @@
+to crear
+  ca
+  set dt 0.005 ;; valor es 0.07
+  set dxx 10
+ 
+  create-somas 1
+  ask soma 0 [
+    set Calcio 22000 
+    set Proteina 11000 
+    set Vescículas 75
+
+    ;; caract. fisica
+    set size 10
+    set heading 90 fd 4.5
+    set shape "circle"
+    set color 12 ]
+
+
+  create-intermedios 1
+  ask intermedios [
+    set Calcio 22000 
+    set Proteina 11000 
+    set Vescículas 75
+
+    ;; caract. fisica
+    set size 1
+    set shape "square"
+    set color 12.1 ]
+
+  create-terminals 1
+  ask terminals [
+    set Calcio 22000 
+    set Proteina 11000 
+    set Vescículas 75
+
+    ;; caract. fisica
+    set size 1
+    set shape "square"
+    set color 12.2 ]
+
+  reset-ticks
+
+end
